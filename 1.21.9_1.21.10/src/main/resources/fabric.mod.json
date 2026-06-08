@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "mobnumericalindicator",
+	"version": "${version}",
+	"name": "Mob Numerical Indicator",
+	"description": "Renders dynamic health, armor, and oxygen indicators above mob heads.",
+	"authors": [
+		"Armaninyow"
+	],
+	"contact": {
+		"homepage": "https://modrinth.com/mod/mob-numerical-indicator",
+		"sources": "https://github.com/armaninyow/Mob-Numerical-Indicator",
+		"issues": "https://github.com/armaninyow/Mob-Numerical-Indicator/discussions/categories/issues"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/mobnumericalindicator/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"com.armaninyow.mobnumericalindicator.MobNumericalIndicator"
+		],
+		"modmenu": [
+			"com.armaninyow.mobnumericalindicator.config.ModMenuIntegration"
+		]
+	},
+	"mixins": [
+		"mobnumericalindicator.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": ">=1.21.9 <1.21.11",
+		"java": ">=21",
+		"fabric-api": "*",
+		"cloth-config": "*",
+		"modmenu": "*"
+	}
+}

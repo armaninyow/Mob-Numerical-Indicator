@@ -1,0 +1,30 @@
+{
+	"mobnumericalindicator.config.title": "Mob Numerical Indicator",
+	"mobnumericalindicator.config.category.general": "General",
+
+	"mobnumericalindicator.config.show_when_aggressive": "Show When Aggressive",
+	"mobnumericalindicator.config.show_when_aggressive.tooltip": "Show indicators when a mob is actively targeting a player or entity.",
+
+	"mobnumericalindicator.config.show_when_damaged": "Show When Damaged",
+	"mobnumericalindicator.config.show_when_damaged.tooltip": "Show indicators when a mob is below 100% health.",
+
+	"mobnumericalindicator.config.show_when_looked_at": "Show When Looked At",
+	"mobnumericalindicator.config.show_when_looked_at.tooltip": "Show indicators when the player's crosshair is hovering over the mob.",
+
+	"mobnumericalindicator.config.show_always_notice": "§7If all three options above are disabled, indicators will show on all mobs always.",
+
+	"mobnumericalindicator.config.show_when_invisible": "Show When Invisible",
+	"mobnumericalindicator.config.show_when_invisible.tooltip": "Show indicators even if the mob has the Invisibility status effect.",
+
+	"mobnumericalindicator.config.show_armor_at_zero": "Show Armor At Zero",
+	"mobnumericalindicator.config.show_armor_at_zero.tooltip": "Show the armor indicator even when the mob is not wearing any armor.",
+
+	"mobnumericalindicator.config.show_text_shadow": "Show Text Shadow",
+	"mobnumericalindicator.config.show_text_shadow.tooltip": "Show a shadow behind all indicator text.",
+
+	"mobnumericalindicator.config.scale": "Scale",
+	"mobnumericalindicator.config.scale.tooltip": "Adjust the baseline size of icons and text.",
+
+	"mobnumericalindicator.config.max_distance": "Max Distance",
+	"mobnumericalindicator.config.max_distance.tooltip": "Maximum distance in blocks at which indicators remain visible."
+}
