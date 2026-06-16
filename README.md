@@ -19,6 +19,12 @@ If you encounter bugs or wish to contribute:
 <details>
   <summary></summary>
   
+### 2.0.0—26.x
+* Added support for Minecraft 26.1, 26.1.1, and 26.1.2
+* Replaced Cloth Config with YetAnotherConfigLib (YACL) 3.9.3 for the in-game config screen
+* Added effect indicators that show active status effects and their remaining duration above the health row
+* Added a Show Always toggle that forces indicators to appear on all mobs at all times
+* Added a Y Offset slider to move the indicators up or down
 ### 1.0.0—1.21.x
 * Initial Release
 </details>
