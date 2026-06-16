@@ -17,6 +17,7 @@ public class ModConfig {
 
 	private static ModConfig INSTANCE;
 
+	public boolean showAlways = false;
 	public boolean showWhenAggressive = true;
 	public boolean showWhenDamaged = true;
 	public boolean showWhenLookedAt = true;
@@ -25,6 +26,7 @@ public class ModConfig {
 	public boolean showTextShadow = true;
 	public float scale = 1.0f;
 	public int maxDistance = 16;
+	public int yOffset = 0;
 
 	public static ModConfig get() {
 		if (INSTANCE == null) {
@@ -38,9 +40,9 @@ public class ModConfig {
 			try (Reader reader = Files.newBufferedReader(CONFIG_PATH)) {
 				INSTANCE = GSON.fromJson(reader, ModConfig.class);
 				if (INSTANCE == null) INSTANCE = new ModConfig();
-				// Clamp to current valid ranges in case config was written by an older version
 				INSTANCE.scale = Math.max(0.25f, Math.min(2.0f, INSTANCE.scale));
 				INSTANCE.maxDistance = Math.max(4, Math.min(64, INSTANCE.maxDistance));
+				INSTANCE.yOffset = Math.max(-10, Math.min(10, INSTANCE.yOffset));
 			} catch (IOException e) {
 				INSTANCE = new ModConfig();
 			}

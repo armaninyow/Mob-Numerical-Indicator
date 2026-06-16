@@ -1,0 +1,14 @@
+{
+	"required": true,
+	"package": "com.armaninyow.mobnumericalindicator.mixin",
+	"compatibilityLevel": "JAVA_25",
+	"client": [
+		"LivingEntityExtractStateMixin",
+		"LivingEntityRendererMixin",
+		"ClientPacketListenerMixin",
+		"LivingEntityEffectSyncMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

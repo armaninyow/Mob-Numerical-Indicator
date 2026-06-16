@@ -1,6 +1,11 @@
 {
 	"mobnumericalindicator.config.title": "Mob Numerical Indicator",
-	"mobnumericalindicator.config.category.general": "General",
+
+	"mobnumericalindicator.config.category.display": "Display",
+	"mobnumericalindicator.config.category.appearance": "Appearance",
+
+	"mobnumericalindicator.config.show_always": "Show Always",
+	"mobnumericalindicator.config.show_always.tooltip": "Always show indicators on all mobs. Disables the three conditional options below.",
 
 	"mobnumericalindicator.config.show_when_aggressive": "Show When Aggressive",
 	"mobnumericalindicator.config.show_when_aggressive.tooltip": "Show indicators when a mob is actively targeting a player or entity.",
@@ -11,8 +16,6 @@
 	"mobnumericalindicator.config.show_when_looked_at": "Show When Looked At",
 	"mobnumericalindicator.config.show_when_looked_at.tooltip": "Show indicators when the player's crosshair is hovering over the mob.",
 
-	"mobnumericalindicator.config.show_always_notice": "§7If all three options above are disabled, indicators will show on all mobs always.",
-
 	"mobnumericalindicator.config.show_when_invisible": "Show When Invisible",
 	"mobnumericalindicator.config.show_when_invisible.tooltip": "Show indicators even if the mob has the Invisibility status effect.",
 
@@ -21,6 +24,9 @@
 
 	"mobnumericalindicator.config.show_text_shadow": "Show Text Shadow",
 	"mobnumericalindicator.config.show_text_shadow.tooltip": "Show a shadow behind all indicator text.",
+
+	"mobnumericalindicator.config.y_offset": "Y Offset",
+	"mobnumericalindicator.config.y_offset.tooltip": "Move the indicators up or down.",
 
 	"mobnumericalindicator.config.scale": "Scale",
 	"mobnumericalindicator.config.scale.tooltip": "Adjust the baseline size of icons and text.",
