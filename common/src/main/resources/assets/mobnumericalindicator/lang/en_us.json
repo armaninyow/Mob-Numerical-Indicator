@@ -20,7 +20,7 @@
 	"mobnumericalindicator.config.show_when_invisible.tooltip": "Show indicators even if the mob has the Invisibility status effect.",
 
 	"mobnumericalindicator.config.show_armor_at_zero": "Show Armor At Zero",
-	"mobnumericalindicator.config.show_armor_at_zero.tooltip": "Show the armor indicator even when the mob is not wearing any armor.",
+	"mobnumericalindicator.config.show_armor_at_zero.tooltip": "Show the armor indicator on applicable mobs even when they are not wearing any armor.",
 
 	"mobnumericalindicator.config.show_text_shadow": "Show Text Shadow",
 	"mobnumericalindicator.config.show_text_shadow.tooltip": "Show a shadow behind all indicator text.",

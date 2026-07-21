@@ -22,6 +22,7 @@ public class EntityRenderCache {
         public final boolean  hasWither;
         public final boolean  hasPoison;
         public final boolean  wearingArmor;
+        public final boolean  canWearArmor;
         public final int       lightCoords;
         public final float    partialTick;
         public final List<ClientEffectCache.CachedEffect> effects;
@@ -61,6 +62,15 @@ public class EntityRenderCache {
                 }
             }
             this.wearingArmor = armor;
+            this.canWearArmor = entity instanceof net.minecraft.world.entity.monster.zombie.Zombie ||
+                    entity instanceof net.minecraft.world.entity.monster.zombie.Drowned ||
+                    entity instanceof net.minecraft.world.entity.monster.zombie.ZombifiedPiglin ||
+                    entity instanceof net.minecraft.world.entity.monster.skeleton.AbstractSkeleton ||
+                    entity instanceof net.minecraft.world.entity.monster.piglin.AbstractPiglin ||
+                    entity instanceof net.minecraft.world.entity.animal.equine.Horse ||
+                    entity instanceof net.minecraft.world.entity.animal.nautilus.AbstractNautilus ||
+                    entity instanceof net.minecraft.world.entity.animal.wolf.Wolf ||
+                    entity instanceof net.minecraft.world.entity.decoration.ArmorStand;
             this.effects = ClientEffectCache.getEffects(this.entityId);
 
             net.minecraft.core.BlockPos lightPos = net.minecraft.core.BlockPos.containing(entity.getLightProbePosition(partialTick));

@@ -10,17 +10,11 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-/**
- * Client-side cache of mob effects received via network packets.
- * Uses game ticks for the countdown so it pauses correctly in singleplayer.
- */
 public class ClientEffectCache {
 
     public static class CachedEffect {
         public final MobEffectInstance instance;
-        // Game tick (level.getGameTime()) when the effect was received
         private final long receivedTick;
-        // Duration in ticks at the time of receipt
         private final int durationTicks;
 
         public CachedEffect(MobEffectInstance instance, long currentGameTick) {
@@ -29,10 +23,6 @@ public class ClientEffectCache {
             this.durationTicks = instance.getDuration();
         }
 
-        /**
-         * Returns remaining seconds, using Math.ceil so 0.2s → 1.
-         * Returns 0 if expired (caller should hide the indicator).
-         */
         public int getRemainingSeconds(long currentGameTick) {
             long elapsedTicks = currentGameTick - receivedTick;
             long remainingTicks = durationTicks - elapsedTicks;
@@ -41,7 +31,6 @@ public class ClientEffectCache {
         }
     }
 
-    // entityId -> (effect holder -> cached effect)
     private static final Map<Integer, Map<Holder<MobEffect>, CachedEffect>> CACHE = new HashMap<>();
 
     public static void onEffectAdded(int entityId, MobEffectInstance instance, long currentGameTick) {

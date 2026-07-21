@@ -72,7 +72,6 @@ public class ModConfigScreen {
 
         return YetAnotherConfigLib.createBuilder()
                 .title(Component.translatable("mobnumericalindicator.config.title"))
-                // --- Display tab ---
                 .category(ConfigCategory.createBuilder()
                         .name(Component.translatable("mobnumericalindicator.config.category.display"))
                         .option(showAlways)
@@ -92,7 +91,6 @@ public class ModConfigScreen {
                                 .controller(BooleanControllerBuilder::create)
                                 .build())
                         .build())
-                // --- Appearance tab ---
                 .category(ConfigCategory.createBuilder()
                         .name(Component.translatable("mobnumericalindicator.config.category.appearance"))
                         .option(Option.<Boolean>createBuilder()

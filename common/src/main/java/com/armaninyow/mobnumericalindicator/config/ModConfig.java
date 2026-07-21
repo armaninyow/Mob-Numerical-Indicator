@@ -56,7 +56,6 @@ public class ModConfig {
 		try (Writer writer = Files.newBufferedWriter(CONFIG_PATH)) {
 			GSON.toJson(INSTANCE, writer);
 		} catch (IOException e) {
-			// ignored
 		}
 	}
 }
