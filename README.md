@@ -19,6 +19,9 @@ If you encounter bugs or wish to contribute:
 <details>
   <summary></summary>
   
+### 2.2.0—26.x
+* Added support for Minecraft 26.3
+* Updated Fabric Loader to 0.19.5 (required for 26.3)
 ### 2.1.0—26.x
 * Added support for Minecraft 26.2
 * Fixed Show Armor At Zero setting showing the armor indicator on mobs that cannot wear armor (Bat, Pufferfish, etc.)
